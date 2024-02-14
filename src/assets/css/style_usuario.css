@@ -1,0 +1,30 @@
+@import "header.css";
+@import "footer.css";
+
+a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 32px;
+}
+
+p{
+    margin: 0px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 32px;
+}
+
+body{
+    background:url('../img/pagina_usuario.png') center/cover no-repeat fixed;
+    margin: 0px;
+    background-color: #BDD8F1;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 15% repeat(2, 340px);
+    padding: 20px;
+    gap: 10px;
+    margin: 0 auto;
+}
+

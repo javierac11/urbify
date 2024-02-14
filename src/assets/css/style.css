@@ -1,0 +1,83 @@
+@import "header.css";
+@import "footer.css";
+
+body{
+    background:url('../img/pagina_principal.png') center/cover no-repeat fixed;
+    margin: 0px;
+    background-color: #BDD8F1;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 32px;
+}
+
+p{
+    margin: 0px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 32px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px repeat(11, 60px);
+    padding: 10px;
+    gap: 10px;
+    margin: 0 auto;
+
+}
+.text_intro{
+    padding: 20px;
+    font-size: 35px;
+    grid-area: 3 / 1 / 6 / 8;
+}
+
+.inicio_sesion{
+    display: grid;
+    grid-template-columns:  1fr 2fr 1fr 1fr ;
+    grid-template-rows: repeat(9, 1fr);
+    background-color: #82A6CB;
+    border-radius: 30px;
+    grid-area: 7 / 1 / 12 / 7;
+    padding: 10px;
+}
+
+.text_inicia_sesion{
+    font-size: 48px;
+    grid-area: 2 / 2;
+    padding: 5px;
+}
+
+.text_email{
+    font-size: 32px;
+    grid-area: 3 / 2;
+    padding: 5px;
+}
+.text_contrasenia{
+    font-size: 32px;
+    grid-area: 5 / 2;
+    padding: 5px;
+}
+.text_input_email{
+    grid-area: 4 / 2 / 4 / 4;
+    padding: 5px;
+}
+.text_input_contrasenia{
+    grid-area: 6 / 2 / 6 / 4;
+    padding: 5px;
+}
+
+button{
+    font-size: 24px;
+    background-color: #3667A6;
+    grid-area: 8 / 3;
+    color: #FFFFFF;
+    border: none;
+
+}
+.crear_cuenta{
+    grid-area: 8 / 2;
+}
+

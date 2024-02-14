@@ -1,0 +1,38 @@
+body{
+    display: grid;
+    background-color: #BDD8F1;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 60px);
+    padding: 10px;
+    gap: 10px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+p.name_error{
+    grid-area: 4 / 3 / 7 / 6;
+    display: flex;
+    align-items: center;
+    font-size: 256px;
+    margin: 0;
+}
+
+p.mensaje_error{
+    grid-area: 7 / 3 / 8 / 12;
+    font-size: 64px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+button{
+    font-size: 24px;
+    background-color: #82A6CB;
+    grid-area: 9 / 8 / 10 / 10;
+    border: none;
+}

@@ -1,0 +1,21 @@
+footer{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr) 2fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    background-color: #82A6CB;
+    gap: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    min-height: 50px;
+}
+
+.contacto{
+    grid-column: 10;
+    justify-content: end;
+    justify-items: center;
+}

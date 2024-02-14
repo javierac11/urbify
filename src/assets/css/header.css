@@ -1,0 +1,27 @@
+header{
+    display: grid;
+    grid-template-columns: 2fr repeat(8, 1fr) 2fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    min-height: 100px;
+    background-color: #82A6CB;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    gap: 10px;
+}
+
+.iniciar_sesion{
+    grid-column: 10;
+    justify-content: end;
+    justify-items: center;
+}
+
+
+.titulo{
+    font-size: 50px;
+}
