@@ -33,13 +33,30 @@ section{
 }
 
 section.foto{
+    display: grid;
+    grid-template-rows: 1fr 10%;
+    grid-template-columns: 1fr;
     grid-area: 2 / 1 / 12 / 4;
     background-color: #3667A6;
     background: url("../img/foto_medina.png") center/cover no-repeat ;
 }
 
+.pie_foto{
+    display: flex;
+    background-color: black;
+    grid-area: 2 / 1 / 2 / 2;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
 section.texto{
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
     font-size: 32px;
+    align-items: center;
     grid-area: 2 / 4 / 9 / 10;
     background-color: #82A6CB;
 }
@@ -53,4 +70,18 @@ section.mapa{
     grid-area: 9 / 4 / 12 / 13;
     background-color: #3667A6;
     background: url("../img/mapa_medina.png") center/cover no-repeat ;
+}
+
+section p{
+    grid-column: 2;
+}
+
+section.que_hacer h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+section.que_hacer li{
+    font-size: 24px;
+    padding: 7px;
 }
