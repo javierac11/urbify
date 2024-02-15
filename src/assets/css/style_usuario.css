@@ -28,3 +28,79 @@ main{
     margin: 0 auto;
 }
 
+section.cambiar_nombre{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-area: 2/6/3/13;
+    background-color: #82A6CB;
+    border-radius: 30px;
+}
+
+section.cambiar_contrasenia{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    margin-top: 10px;
+    grid-area: 3/6/4/13;
+    background-color: #82A6CB;
+    border-radius: 30px;
+}
+
+section.info{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25%;
+    margin-bottom: 25%;
+    flex-wrap: wrap;
+    grid-area: 2/2/3/5;
+}
+
+section.info p.saludo{
+    font-size: 48px;
+}
+
+section.info p.email{
+    margin-top: 5%;
+    font-size: 32px;
+}
+
+section.info p.contrasenia{
+    margin-top: 5%;
+    font-size: 32px;
+}
+
+section p.texto{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    grid-area: 2/ 2/ 3/ 7;
+}
+
+section p.input{
+    margin-top: 10px;
+    font-size: 24px;
+    grid-area: 3/ 2/ 4/ 7;
+}
+
+section p.input input{
+    width: 100%;
+}
+
+section p.input_contrasenia{
+    margin-top: 10px;
+    font-size: 24px;
+    grid-area: 5/ 2/ 6/ 7;
+}
+
+section p.input_contrasenia input{
+    width: 100%;
+}
+
+section button{
+    font-size: 16px;
+    background-color: #3667A6;
+    color: #FFFFFF;
+    border: none;
+    grid-area: 7 / 6/ 8 / 7;
+}
