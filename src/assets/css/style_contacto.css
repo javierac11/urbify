@@ -109,3 +109,14 @@ a.crear_cuenta{
     grid-area: 13 / 3 / 14 / 5;
     width: 100%;
 }
+/*
+@media only screen and (min-width: 500px) {
+
+    .contacto {
+
+        min-width: 500px;
+
+    }
+
+}
+*/
