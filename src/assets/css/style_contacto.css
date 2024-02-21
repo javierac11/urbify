@@ -18,18 +18,14 @@ p{
 }
 
 main{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 100px repeat(11, 60px);
+    margin: 0 auto;
+    /*display: grid;
+    /*grid-template-columns: repeat(auto-fit, 1fr);
+    /*grid-template-rows: 100px repeat(11, 60px);*/
+    width: 50%;
     padding: 10px;
     gap: 10px;
-    margin: 0 auto;
-}
 
-.contacto{
-    grid-column: 10;
-    justify-content: end;
-    justify-items: center;
 }
 
 .iniciar_sesion{
@@ -43,40 +39,45 @@ main{
 }
 
 div.contacto{
+    margin-top: 20%;
+
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(13, 1fr) 0.25fr 0.75fr 1fr;
+    grid-template-rows: repeat(10, 1fr);
     border-radius: 30px;
-    margin: 10px;
-    margin-bottom: 30px;
     background-color: #82A6CB;
-    grid-area: 2 / 4 / 13 / 10;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    min-width: 700px;
+    min-height: 100%;
 }
 
 div p.contacto{
     font-size: 48px;
-    grid-area: 2 / 2 / 4 / 6;
+    grid-area: 2 / 3 / 3 / 5;
 }
 
 div p.text_email{
-    grid-area: 3 / 2 / 6 / 4;
+    grid-area: 3 / 2 / 4 / 3;
     font-size: 32px;
     width: 100%;
 }
 
 input.email{
-    grid-area: 4 / 2 / 5 / 6 ;
+    grid-area: 4 / 2 / 5 / 6;
     width: 100%;
 }
 
 div p.nombre{
-    grid-area: 5 / 2 / 6 / 4;
+    grid-area: 5 / 2 / 6 / 3;
     font-size: 32px;
     width: 100%;
 }
 
 input.nombre{
-    grid-area: 6 / 2 / 7 / 6 ;
+    grid-area: 6 / 2 / 7 / 6;
     width: 100%;
 }
 
@@ -87,13 +88,13 @@ div p.mensaje{
 }
 
 textarea.mensaje{
-    grid-area: 8 / 2 / 14 / 6 ;
+    grid-area: 8 / 2 / 9 / 6;
     width: 100%;
 }
 
 button{
     font-size: 24px;
-    grid-area: 15 / 5 / 16 / 6;
+    grid-area: 9 / 5 / 10 / 6;
     width: 100%;
     background-color: #3667A6;
     color: #FFFFFF;
@@ -101,7 +102,7 @@ button{
 }
 p.terminos{
     font-size: 20px;
-    grid-area: 10 / 3 / 11 / 6 ;
+    grid-row: 10;
 
 }
 a.crear_cuenta{
@@ -109,14 +110,69 @@ a.crear_cuenta{
     grid-area: 13 / 3 / 14 / 5;
     width: 100%;
 }
-/*
-@media only screen and (min-width: 500px) {
 
-    .contacto {
+@media only screen and (max-width: 1000px) {
 
-        min-width: 500px;
 
+    main{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 1000px;
+        margin-top: 10%;
+        /*grid-template-rows: 100px repeat(11, 60px);*/
+        padding: 10px;
+        gap: 10px;
+    }
+    div p.contacto{
+        font-size: 64px;
+        grid-area: 2 / 3 / 3 / 5;
+    }
+
+    div p.text_email{
+        grid-area: 3 / 2 / 4 / 3;
+        font-size: 40px;
+        width: 100%;
+    }
+
+    input.email{
+        grid-area: 4 / 2 / 5 / 6;
+        width: 100%;
+        height: 25%;
+    }
+
+    div p.nombre{
+        grid-area: 5 / 2 / 6 / 3;
+        font-size: 40px;
+        width: 100%;
+    }
+
+    input.nombre{
+        grid-area: 6 / 2 / 7 / 6;
+        width: 100%;
+        height: 25%;
+    }
+
+    div p.mensaje{
+        width: 100%;
+        grid-area: 7 / 2 / 8 / 3;
+        font-size: 40px;
+    }
+
+    textarea.mensaje{
+        grid-area: 8 / 2 / 9 / 6;
+        width: 100%;
+        height: 100%;
+    }
+
+    button{
+        font-size: 24px;
+        grid-area: 9 / 5 / 10 / 6;
+        width: 100%;
+        background-color: #3667A6;
+        color: #FFFFFF;
+        border: none;
     }
 
 }
-*/
