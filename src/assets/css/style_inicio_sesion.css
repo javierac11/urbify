@@ -1,9 +1,14 @@
 @import "header.css";
 @import "footer.css";
 
-body{
-    margin: 0px;
+html, body{
+    min-height: 100vh;
+    min-width: fit-content;
+    margin: 0;
     background-color: #BDD8F1;
+    display: flex;
+    flex-direction: column;
+
 }
 a{
     text-decoration: none;
@@ -21,7 +26,7 @@ main{
 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 100px repeat(11, 60px);
+    grid-template-rows: repeat(11, 60px);
     padding: 10px;
     gap: 10px;
     margin: 0 auto;
@@ -98,6 +103,66 @@ a.crear_cuenta{
     width: 100%;
 }
 
-@media (max-width: 480px) {
 
+@media only screen and (max-width: 1000px) {
+
+
+    main {
+        min-width: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*height: 800px;
+        /*grid-template-rows: 100px repeat(11, 60px);*/
+        padding: 10px;
+        gap: 10px;
+    }
+
+    div.iniciar_sesion {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(14, 1fr);
+        border-radius: 30px;
+        background-color: #82A6CB;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    div p.iniciar_sesion {
+        font-size: 48px;
+        grid-area: 3 / 2 / 4 / 6;
+    }
+
+    div p.text_email {
+        grid-area: 5 / 2 / 6 / 4;
+        font-size: 32px;
+        width: 100%;
+    }
+
+    input.email {
+        grid-area: 6 / 2 / 7 / 6;
+        width: 100%;
+    }
+
+    div p.contrasenia {
+        grid-area: 8 / 2 / 9 / 3;
+        font-size: 32px;
+    }
+
+    input.contrasenia {
+        grid-area: 9 / 2 / 10 / 6;
+        width: 100%;
+    }
+
+    button {
+        font-size: 24px;
+        grid-area: 11 / 3 / 12 / 5;
+        width: 100%;
+        background-color: #3667A6;
+        color: #FFFFFF;
+        border: none;
+
+    }
 }
