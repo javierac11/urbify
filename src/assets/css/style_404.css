@@ -36,3 +36,32 @@ button{
     grid-area: 9 / 8 / 10 / 10;
     border: none;
 }
+
+@media only screen and (max-width: 1000px) {
+
+    p.name_error{
+        grid-area: 2/2/4/8;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-size: 128px;
+        margin: 0;
+    }
+
+    p.mensaje_error{
+        grid-area: 4 / 2 / 5 / 11;
+        font-size: 32px;
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+
+
+    button{
+        font-size: 24px;
+        background-color: #82A6CB;
+        grid-area: 8 / 5 / 9 / 9;
+        border: none;
+    }
+
+}
