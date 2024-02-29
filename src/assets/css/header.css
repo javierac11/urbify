@@ -6,12 +6,8 @@ header{
     justify-content: center;
     align-content: center;
     padding: 10px;
-    min-height: 100px;
+    min-width: 700px;
     background-color: #82A6CB;
-    position: fixed;
-    top: 0;
-    width: 100%;
-
     gap: 10px;
 }
 

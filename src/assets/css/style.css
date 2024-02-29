@@ -1,32 +1,22 @@
 @import "header.css";
 @import "footer.css";
+@import "body.css";
 
 html, body{
-    min-height: 100vh;
-    min-width: fit-content;
+    
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
     background:url('../img/pagina_principal.png') center/cover no-repeat fixed;
     margin: 0;
     background-color: #BDD8F1;
-    display: flex;
-    flex-direction: column;
 
-}
-a{
-    text-decoration: none;
-    color: #000000;
-    font-size: 32px;
-}
-
-p{
-    margin: 0px;
-    text-decoration: none;
-    color: #000000;
-    font-size: 32px;
 }
 
 main{
     flex-grow: 1;
-    min-height: calc(100vh - 160px);
+    min-height: auto;
     min-width: 700px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -90,9 +80,10 @@ button{
 }
 
 @media only screen and (max-width: 1000px) {
+
     main{
         flex-grow: 1;
-        min-height: calc(100vh - 160px);
+        min-height: 100vw;
         min-width: 700px;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -114,7 +105,7 @@ button{
         grid-template-rows: repeat(9, 1fr);
         background-color: #82A6CB;
         border-radius: 30px;
-        grid-area: 4 / 1 / 11 / 13;
+        grid-area: 4 / 1 / 10 / 13;
         padding: 10px;
     }
 

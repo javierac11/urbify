@@ -1,0 +1,19 @@
+body{
+    height: 100%;
+    margin: 0;
+    position: relative;
+    padding-bottom: 50px;
+    background-color: #BDD8F1;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 32px;
+}
+
+p{
+    margin: 0px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 32px;
+}
