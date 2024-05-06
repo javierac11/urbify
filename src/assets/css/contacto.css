@@ -1,0 +1,190 @@
+@import "header.css";
+@import "footer.css";
+
+html, body{
+    min-height: 100vh;
+    min-width: fit-content;
+    margin: 0;
+    background-color: #BDD8F1;
+    display: flex;
+    flex-direction: column;
+
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 32px;
+}
+p{
+    margin: 0;
+    text-decoration: none;
+    color: #000000;
+    font-size: 32px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(11, 60px);
+    padding: 10px;
+    gap: 10px;
+    margin: 0 auto;
+
+}
+
+.iniciar_sesion{
+    grid-column: 10;
+    justify-content: end;
+    justify-items: center;
+}
+
+div.contacto{
+    grid-area: 2 / 4 / 11 / 10;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    border-radius: 30px;
+    background-color: #82A6CB;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    min-width: 700px;
+    min-height: 100%;
+
+
+}
+
+div p.contacto{
+    font-size: 48px;
+    grid-area: 2 / 3 / 3 / 5;
+}
+
+div p.text_email{
+    grid-area: 3 / 2 / 4 / 3;
+    font-size: 32px;
+    width: 100%;
+}
+
+input.email{
+    grid-area: 4 / 2 / 5 / 6;
+    width: 100%;
+    height: 50%;
+}
+
+div p.nombre{
+    grid-area: 5 / 2 / 6 / 3;
+    font-size: 32px;
+    width: 100%;
+}
+
+input.nombre{
+    grid-area: 6 / 2 / 7 / 6;
+    width: 100%;
+    height: 50%;
+}
+
+div p.mensaje{
+    width: 100%;
+    grid-area: 7 / 2 / 8 / 3;
+    font-size: 32px;
+}
+
+textarea.mensaje{
+    grid-area: 8 / 2 / 9 / 6;
+    width: 100%;
+    height: 100%;
+}
+
+button{
+    font-size: 24px;
+    grid-area: 9 / 5 / 10 / 6;
+    width: 100%;
+    background-color: #3667A6;
+    color: #FFFFFF;
+    border: none;
+}
+
+a.crear_cuenta{
+    text-align: center;
+    grid-area: 13 / 3 / 14 / 5;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+    main{
+        margin-bottom: 7%;
+        min-width: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    div.contacto{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        border-radius: 30px;
+        background-color: #82A6CB;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    div p.contacto{
+        font-size: 64px;
+        grid-area: 2 / 3 / 3 / 5;
+    }
+
+    div p.text_email{
+        grid-area: 3 / 2 / 4 / 3;
+        font-size: 40px;
+        width: 100%;
+    }
+
+    input.email{
+        grid-area: 4 / 2 / 5 / 6;
+        width: 100%;
+        height: 25%;
+    }
+
+    div p.nombre{
+        grid-area: 5 / 2 / 6 / 3;
+        font-size: 40px;
+        width: 100%;
+    }
+
+    input.nombre{
+        grid-area: 6 / 2 / 7 / 6;
+        width: 100%;
+        height: 25%;
+    }
+
+    div p.mensaje{
+        width: 100%;
+        grid-area: 7 / 2 / 8 / 3;
+        font-size: 40px;
+    }
+
+    textarea.mensaje{
+        grid-area: 8 / 2 / 9 / 6;
+        width: 100%;
+        height: 100%;
+    }
+
+    button{
+        font-size: 24px;
+        grid-area: 9 / 5 / 10 / 6;
+        width: 100%;
+        background-color: #3667A6;
+        color: #FFFFFF;
+        border: none;
+    }
+
+}

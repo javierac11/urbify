@@ -79,7 +79,7 @@ button{
     grid-area: 8 / 2;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
 
     main{
         flex-grow: 1;
@@ -96,7 +96,7 @@ button{
     .text_intro{
         padding: 20px;
         font-size: 32px;
-        grid-area: 1 / 1 / 5 / 13;
+        grid-area: 2 / 1 / 7 / 9;
     }
 
     .inicio_sesion{
@@ -105,10 +105,31 @@ button{
         grid-template-rows: repeat(9, 1fr);
         background-color: #82A6CB;
         border-radius: 30px;
-        grid-area: 4 / 1 / 10 / 13;
+        grid-area: 5 / 1 / 11 / 9;
         padding: 10px;
+    }
+
+    input{
+        font-size: 24px;
+        height: 25% ;
     }
 
 
 }
 
+@media only screen and (max-width: 1000px) {
+    .text_intro{
+        padding: 20px;
+        font-size: 32px;
+        grid-area: 2 / 1 / 7 / 13;
+    }
+    .inicio_sesion{
+        display: grid;
+        grid-template-columns:  0.5fr 2fr 1fr 0.5fr ;
+        grid-template-rows: repeat(9, 1fr);
+        background-color: #82A6CB;
+        border-radius: 30px;
+        grid-area: 5/ 1 / 12 / 13;
+        padding: 10px;
+    }
+}
