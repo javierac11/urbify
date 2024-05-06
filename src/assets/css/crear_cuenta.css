@@ -129,6 +129,9 @@ a.crear_cuenta{
 
 @media only screen and (max-width: 550px) {
 
+    input{
+        font-size: 24px;
+    }
 
     main{
 

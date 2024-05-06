@@ -57,6 +57,8 @@ div.iniciar_sesion{
     margin-bottom: 30px;
     background-color: #82A6CB;
     grid-area: 2 / 4 / 11 / 10;
+    min-width: 700px;
+    min-height: 100%;
 }
 
 div p.iniciar_sesion{
@@ -105,27 +107,33 @@ a.crear_cuenta{
 
 @media only screen and (max-width: 1000px) {
 
+    input{
+        font-size: 24px;
+    }
 
-    main {
-        margin-bottom: 5%;
+    main{
+
+        margin-bottom: 7%;
         min-width: 700px;
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 800px;
         padding: 10px;
         gap: 10px;
     }
-
     div.iniciar_sesion {
+        position: absolute;
+        top: 20%;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(14, 1fr);
         border-radius: 30px;
         background-color: #82A6CB;
-        justify-content: center;
+        /*justify-content: center;
         justify-items: center;
         align-items: center;
-        align-content: center;
+        align-content: center;*/
     }
 
     div p.iniciar_sesion {
