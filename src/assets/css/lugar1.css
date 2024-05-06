@@ -18,7 +18,7 @@ p{
 main{
 
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(13, 1fr);
     grid-template-rows: repeat(10, 60px);
     padding: 20px;
     gap: 10px;
@@ -41,6 +41,7 @@ section.foto{
 }
 
 .pie_foto{
+    font-size: 32px;
     display: flex;
     background-color: black;
     grid-area: 2 / 1 / 2 / 2;
@@ -56,17 +57,18 @@ section.texto{
     grid-template-columns: 10% 1fr 10%;
     font-size: 32px;
     align-items: center;
-    grid-area: 1 / 4 / 8 / 10;
+    grid-area: 1 / 4 / 9 / 10;
     background-color: #82A6CB;
 }
 
 section.que_hacer{
-    grid-area: 1 / 10 / 8 / 13;
+    grid-area: 1 / 10 / 9 / 14;
     background-color: #82A6CB;
+    font-size-adjust: inherit;
 }
 
 section.mapa{
-    grid-area: 8 / 4 / 11 / 13;
+    grid-area: 9 / 4 / 12 / 14;
     background-color: #3667A6;
     background: url("../img/mapa_medina.png") center/cover no-repeat ;
 }
@@ -81,39 +83,39 @@ section.que_hacer h2{
 }
 
 section.que_hacer li{
-    font-size: 24px;
+    font-size: 20px;
     padding: 7px;
 }
 
-@media only screen and (max-width: 1000px) {
-    section.foto{
-        display: grid;
-        grid-template-rows: 1fr 10%;
-        grid-template-columns: 1fr;
-        grid-area: 1 / 1 / 11 / 4;
-        background-color: #3667A6;
-        background: url("../img/foto_medina.png") center/cover no-repeat ;
+@media only screen and (max-width: 900px) {
+    main {
+        grid-template-rows: repeat(11, 100px);
+        min-width: 80vh;
     }
 
-    section.texto{
-        display: grid;
-        grid-template-columns: 10% 1fr 10%;
+    section.mapa {
+        grid-area: 10 / 1 / 12 / 14;
+    }
+
+    section.texto {
+        grid-area: 1 / 1 / 5 / 14;
+
+    }
+
+    section.texto p {
         font-size: 32px;
-        align-items: center;
-        grid-area: 1 / 4 / 8 / 10;
-        background-color: #82A6CB;
     }
 
-    section.que_hacer{
-        grid-area: 1 / 10 / 8 / 13;
-        background-color: #82A6CB;
+    section.foto {
+        grid-area: 5 / 1 / 10 / 7;
     }
 
-    section.mapa{
-        grid-area: 8 / 4 / 11 / 13;
-        background-color: #3667A6;
-        background: url("../img/mapa_medina.png") center/cover no-repeat ;
+    section.que_hacer {
+        grid-area: 5 / 7 / 10 / 14;
     }
 
+    .pie_foto {
+        font-size: 24px;
+    }
 
 }
