@@ -15,11 +15,25 @@ main {
 }
 
 p.name_error{
+    animation-duration: 3s;
+    animation-name: slidein;
     grid-area: 4 / 3 / 7 / 6;
     display: flex;
     align-items: center;
     font-size: 256px;
     margin: 0;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
 }
 
 p.mensaje_error{
@@ -52,6 +66,8 @@ button{
         font-size: 128px;
         margin: 0;
     }
+
+
 
     p.mensaje_error{
         grid-area: 4 / 2 / 5 / 11;
