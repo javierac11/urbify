@@ -1,0 +1,117 @@
+footer {
+  background-color: #82a6cb;
+  flex-grow: 3;
+  grid-template-columns: repeat(9, 1fr) 2fr;
+  gap: 10px;
+  width: 100%;
+  min-width: 700px;
+  min-height: 50px;
+  max-height: 50px;
+  display: grid;
+  position: fixed;
+  bottom: 0;
+}
+
+.contacto {
+  grid-column: 10;
+  justify-content: end;
+  justify-items: center;
+}
+
+header {
+  background-color: #82a6cb;
+  grid-template-columns: 2fr repeat(8, 1fr) 2fr;
+  place-content: center;
+  place-items: center;
+  gap: 10px;
+  min-width: 700px;
+  padding: 10px;
+  display: grid;
+}
+
+.iniciar_sesion {
+  grid-column: 10;
+  justify-content: end;
+  justify-items: center;
+}
+
+.titulo {
+  font-size: 50px;
+}
+
+html, body {
+  background-color: #bdd8f1;
+  flex-direction: column;
+  min-width: fit-content;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+}
+
+a {
+  color: #000;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+p {
+  color: #000;
+  margin: 0;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+main {
+  grid-template-columns: repeat(auto-fill, 550px);
+  justify-content: center;
+  gap: 10px;
+  min-height: 100%;
+  margin-bottom: 5%;
+  padding: 20px;
+  display: grid;
+}
+
+section {
+  border-radius: 30px;
+  grid-template-rows: repeat(5, 1fr);
+  min-width: 85%;
+  height: 350px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: grid;
+}
+
+.nombre {
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  grid-area: 5 / 1 / 6 / 2;
+  font-size: 64px;
+}
+
+section.lugar1 {
+  background: url("Medina-Sidonia.fd0a5bea.png") center / cover no-repeat;
+}
+
+section.lugar2 {
+  background: url("Sanlucar.101565b8.png") center / cover no-repeat;
+}
+
+section.lugar3 {
+  background: url("Berlin.c9da9c2f.png") center / cover no-repeat;
+}
+
+section.lugar4 {
+  background: url("Cadiz.c0307cac.png") center / cover no-repeat;
+}
+
+section.lugar5 {
+  background: url("Granada.8a9e2ed1.png") center / cover no-repeat;
+}
+
+section.lugar6 {
+  background-color: #d9d9d9;
+}
+/*# sourceMappingURL=lugares.6719fcc5.css.map */

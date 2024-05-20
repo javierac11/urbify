@@ -112,10 +112,8 @@ a.crear_cuenta{
     }
 
     main{
-
         margin-bottom: 7%;
         min-width: 700px;
-        display: flex;
         justify-content: center;
         align-items: center;
         height: 800px;
@@ -123,8 +121,11 @@ a.crear_cuenta{
         gap: 10px;
     }
     div.iniciar_sesion {
-        position: absolute;
-        top: 20%;
+        grid-area: 5 / 4 / 9 / 10;
+        /*position: absolute;*/
+        /*top: 20%;
+        bottom: 20%;*/
+
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(14, 1fr);

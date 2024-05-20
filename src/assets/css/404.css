@@ -39,6 +39,11 @@ button{
 
 @media only screen and (max-width: 1000px) {
 
+    main{
+        grid-template-rows: repeat(9, 60px);
+
+    }
+
     p.name_error{
         grid-area: 2/2/4/8;
         display: flex;
