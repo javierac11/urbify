@@ -129,7 +129,7 @@ button{
         grid-template-rows: repeat(9, 1fr);
         background-color: #82A6CB;
         border-radius: 30px;
-        grid-area: 5/ 1 / 11 / 13;
+        grid-area: 5/ 1 / 12 / 13;
         padding: 10px;
     }
 }
