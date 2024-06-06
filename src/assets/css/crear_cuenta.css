@@ -62,48 +62,80 @@ div.crear_cuenta{
     min-height: 100%;
 }
 
-div p.crear_cuenta{
+div h1.crear_cuenta{
+    margin: 0;
+    font-weight: normal;
+    unicode-bidi: isolate;
     font-size: 48px;
     grid-area: 2 / 2 / 4 / 6;
 }
 
-div p.text_email{
-    grid-area: 3 / 2 / 6 / 4;
+h2.text_email{
+/*    grid-area: 3 / 2 / 6 / 4;*/
+    margin: 0;
+    font-weight: normal;
+    unicode-bidi: isolate;
     font-size: 32px;
     width: 100%;
+}
+
+label.email{
+    grid-area: 5 / 2 / 6 / 6 ;
+    width: 100%;
+    height: 100%;
 }
 
 input.email{
-    grid-area: 5 / 2 / 6 / 6 ;
+    /*grid-area: 5 / 2 / 6 / 6 ;*/
     width: 100%;
-    height: 50%;
+    height: 30%;
 }
 
-div p.usuario{
-    grid-area: 6 / 2 / 7 / 4;
+h2.usuario{
+    margin: 0;
+    font-weight: normal;
+    unicode-bidi: isolate;
     font-size: 32px;
     width: 100%;
+}
+label.usuario{
+    grid-area: 7 / 2 / 8 / 6 ;
+    width: 100%;
+    height: 100%;
 }
 
 input.usuario{
-    grid-area: 7 / 2 / 8 / 6 ;
     width: 100%;
-    height: 50%;
+    height: 30%;
 }
 
-div p.contrasenia{
+div h2.contrasenia{
+    margin: 0;
+    font-weight: normal;
+    unicode-bidi: isolate;
     grid-area: 8 / 2 / 9 / 3;
     font-size: 32px;
+}
+
+label.contrasenia{
+    grid-area: 9 / 2 / 10 / 6 ;
+    width: 100%;
+    height: 100%;
 }
 
 input.contrasenia{
     grid-area: 9 / 2 / 10 / 6 ;
     width: 100%;
-    height: 50%;
+    height: 30%;
+}
+
+label.terminos{
+    display: inline-flex;
+    grid-area: 11 / 2 / 11 / 6 ;
+    height: 100%;
 }
 
 input.terminos{
-    grid-area: 10 / 2 / 11 / 2 ;
     height: 50%;
 }
 
@@ -117,7 +149,6 @@ button{
 }
 p.terminos{
     font-size: 20px;
-    grid-area: 10 / 3 / 11 / 6 ;
     width: 100%;
 }
 a.crear_cuenta{

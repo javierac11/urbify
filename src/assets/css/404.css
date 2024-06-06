@@ -14,7 +14,9 @@ main {
     width: 95%;
 }
 
-p.name_error{
+h1.name_error{
+    font-weight: normal;
+    unicode-bidi: normal;
     animation-duration: 3s;
     animation-name: slidein;
     grid-area: 4 / 3 / 7 / 6;
@@ -36,7 +38,9 @@ p.name_error{
     }
 }
 
-p.mensaje_error{
+h2.mensaje_error{
+    font-weight: normal;
+    unicode-bidi: normal;
     grid-area: 7 / 3 / 8 / 12;
     font-size: 64px;
     display: flex;
@@ -58,7 +62,7 @@ button{
 
     }
 
-    p.name_error{
+    h1.name_error{
         grid-area: 2/2/4/8;
         display: flex;
         justify-content: start;
@@ -69,7 +73,7 @@ button{
 
 
 
-    p.mensaje_error{
+    h2.mensaje_error{
         grid-area: 4 / 2 / 5 / 11;
         font-size: 32px;
         display: flex;

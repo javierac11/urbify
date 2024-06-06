@@ -35,25 +35,44 @@ main{
 .inicio_sesion{
     display: grid;
     grid-template-columns:  0.5fr 2fr 1fr 0.5fr ;
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     background-color: #82A6CB;
     border-radius: 30px;
     grid-area: 6 / 1 / 11 / 7;
     padding: 10px;
 }
 
-.text_inicia_sesion{
+h1.text_inicia_sesion{
     font-size: 48px;
     grid-area: 2 / 2;
     padding: 5px;
+    margin-block: auto;
+    font-weight: normal;
+    unicode-bidi: normal;
 }
 
-.text_email{
+label.contrasenia{
+    grid-area: 5 / 2 / 6 / 4;
+}
+
+label.email{
+    grid-area: 3 / 2 / 4 / 4;
+}
+
+h2.text_email{
+    margin-block: auto;
+    margin-inline: auto;
+    font-weight: normal;
+    unicode-bidi: isolate;
     font-size: 32px;
     grid-area: 3 / 2;
     padding: 5px;
 }
-.text_contrasenia{
+h2.text_contrasenia{
+    margin-block: auto;
+    margin-inline: auto;
+    font-weight: normal;
+    unicode-bidi: isolate;
     font-size: 32px;
     grid-area: 5 / 2;
     padding: 5px;
@@ -61,10 +80,12 @@ main{
 .text_input_email{
     grid-area: 4 / 2 / 4 / 4;
     padding: 5px;
+    width: 100%;
 }
 .text_input_contrasenia{
     grid-area: 6 / 2 / 6 / 4;
     padding: 5px;
+    width: 100%;
 }
 
 button{
@@ -126,10 +147,21 @@ button{
     .inicio_sesion{
         display: grid;
         grid-template-columns:  0.5fr 2fr 1fr 0.5fr ;
-        grid-template-rows: repeat(9, 1fr);
+        grid-template-rows: repeat(8, 1fr);
         background-color: #82A6CB;
         border-radius: 30px;
         grid-area: 5/ 1 / 11 / 13;
         padding: 10px;
+    }
+    button{
+        font-size: 24px;
+        background-color: #3667A6;
+        grid-area: 7 / 3;
+        color: #FFFFFF;
+        border: none;
+
+    }
+    .crear_cuenta{
+        grid-area: 7 / 2;
     }
 }

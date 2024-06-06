@@ -10,6 +10,14 @@ html, body{
     flex-direction: column;
 
 }
+
+h1{
+    margin-block: auto;
+    margin-inline: auto;
+    font-weight: normal;
+    unicode-bidi: isolate;
+}
+
 a{
     text-decoration: none;
     color: #000000;
@@ -46,7 +54,10 @@ section{
 
 }
 
-.nombre{
+h2.nombre{
+    margin: 0;
+    font-weight: normal;
+    unicode-bidi: isolate;
     grid-area: 5 / 1 / 6 / 2;
     background-color: black;
     color: #FFFFFF;
