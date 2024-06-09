@@ -9,10 +9,19 @@ header {
   display: grid;
 }
 
+header.dark-mode {
+  color: #e0e0e0;
+  background-color: #16213e;
+}
+
 .iniciar_sesion {
   grid-column: 10;
   justify-content: end;
   justify-items: center;
+}
+
+.titulo.dark-mode {
+  color: #e0e0e0;
 }
 
 footer {
@@ -29,6 +38,14 @@ footer {
   bottom: 0;
 }
 
+footer.dark-mode {
+  background-color: #1a1a2e;
+}
+
+.contacto.dark-mode {
+  color: #e0e0e0;
+}
+
 .contacto {
   grid-column: 10;
   justify-content: end;
@@ -42,6 +59,21 @@ html, body {
   min-height: 100vh;
   margin: 0;
   display: flex;
+}
+
+body.dark-mode, html.dark-mode {
+  color: #e0e0e0;
+  background-color: #0f3460;
+}
+
+button.modo {
+  cursor: pointer;
+  background-color: #3667a6;
+  grid-area: 1 / 12 / 2 / 13;
+}
+
+button.dark-mode {
+  background-color: #0f3460;
 }
 
 a {
@@ -86,6 +118,10 @@ div.iniciar_sesion {
   min-height: 100%;
   margin: 10px 10px 30px;
   display: grid;
+}
+
+div.iniciar_sesion.dark-mode {
+  background-color: #16213e;
 }
 
 div h1.iniciar_sesion {
@@ -151,6 +187,10 @@ a.crear_cuenta {
   grid-area: 13 / 2 / 14 / 6;
   width: 100%;
   font-size: 24px;
+}
+
+a.dark-mode {
+  color: #e0e0e0;
 }
 
 @media only screen and (width <= 1000px) {

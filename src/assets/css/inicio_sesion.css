@@ -22,9 +22,6 @@ button.modo{
     cursor: pointer;
 }
 
-button.modo.dark-mode{
-    background-color: #16213e;
-}
 
 button.dark-mode{
     background-color: #0f3460;
