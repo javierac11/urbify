@@ -9,7 +9,24 @@ html, body{
     flex-direction: column;
 
 }
+body.dark-mode, html.dark-mode{
+    background-color: #0f3460;
+    color: #e0e0e0;
+}
 
+button.modo{
+    grid-area: 1 / 12 / 2 / 13;
+    background-color: #3667A6;
+
+    cursor: pointer;
+}
+button.modo.dark-mode{
+    background-color: #16213e;
+}
+
+button.dark-mode{
+    background-color: #0f3460;
+}
 a{
     text-decoration: none;
     color: #000000;
@@ -60,6 +77,10 @@ div.crear_cuenta{
     align-content: center;
     min-width: 700px;
     min-height: 100%;
+}
+
+div.crear_cuenta.dark-mode{
+    background-color: #16213e;
 }
 
 div h1.crear_cuenta{
@@ -151,11 +172,20 @@ p.terminos{
     font-size: 20px;
     width: 100%;
 }
+
+p.terminos.dark-mode{
+    color: #e0e0e0;
+}
+
 a.crear_cuenta{
     text-align: center;
     grid-area: 13 / 3 / 14 / 5;
     width: 100%;
     font-size: 24px;
+}
+
+a.dark-mode {
+    color: #e0e0e0;
 }
 
 @media only screen and (max-width: 550px) {

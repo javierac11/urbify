@@ -92,37 +92,58 @@ main {
   background-color: #82a6cb;
   border-radius: 30px;
   grid-area: 6 / 1 / 11 / 7;
-  grid-template-rows: repeat(9, 1fr);
+  grid-template-rows: repeat(8, 1fr);
   grid-template-columns: .5fr 2fr 1fr .5fr;
   padding: 10px;
   display: grid;
 }
 
-.text_inicia_sesion {
+h1.text_inicia_sesion {
+  unicode-bidi: normal;
   grid-area: 2 / 2;
+  margin-block: auto;
   padding: 5px;
   font-size: 48px;
+  font-weight: normal;
 }
 
-.text_email {
+label.contrasenia {
+  grid-area: 5 / 2 / 6 / 4;
+}
+
+label.email {
+  grid-area: 3 / 2 / 4 / 4;
+}
+
+h2.text_email {
+  unicode-bidi: isolate;
   grid-area: 3 / 2;
+  margin-block: auto;
+  margin-inline: auto;
   padding: 5px;
   font-size: 32px;
+  font-weight: normal;
 }
 
-.text_contrasenia {
+h2.text_contrasenia {
+  unicode-bidi: isolate;
   grid-area: 5 / 2;
+  margin-block: auto;
+  margin-inline: auto;
   padding: 5px;
   font-size: 32px;
+  font-weight: normal;
 }
 
 .text_input_email {
   grid-area: 4 / 2 / 4 / 4;
+  width: 100%;
   padding: 5px;
 }
 
 .text_input_contrasenia {
   grid-area: 6 / 2 / 6 / 4;
+  width: 100%;
   padding: 5px;
 }
 
@@ -184,10 +205,22 @@ button {
     background-color: #82a6cb;
     border-radius: 30px;
     grid-area: 5 / 1 / 11 / 13;
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-template-columns: .5fr 2fr 1fr .5fr;
     padding: 10px;
     display: grid;
+  }
+
+  button {
+    color: #fff;
+    background-color: #3667a6;
+    border: none;
+    grid-area: 7 / 3;
+    font-size: 24px;
+  }
+
+  .crear_cuenta {
+    grid-area: 7 / 2;
   }
 }
 /*# sourceMappingURL=index.07fedde6.css.map */

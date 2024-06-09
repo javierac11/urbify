@@ -13,6 +13,29 @@ html, body{
     background-color: #BDD8F1;
 
 }
+body.dark-mode, html.dark-mode{
+    background-color: #0f3460;
+    color: #e0e0e0;
+}
+
+button.modo{
+    grid-area: 1 / 12 / 2 / 13;
+    background-color: #3667A6;
+
+    cursor: pointer;
+}
+
+button.modo.dark-mode{
+    background-color: #16213e;
+}
+
+button.dark-mode{
+    background-color: #0f3460;
+}
+
+a.dark-mode{
+    color: #e0e0e0;
+}
 
 main{
     flex-grow: 1;
@@ -40,6 +63,10 @@ main{
     border-radius: 30px;
     grid-area: 6 / 1 / 11 / 7;
     padding: 10px;
+}
+
+.inicio_sesion.dark-mode{
+    background-color: #16213e;
 }
 
 h1.text_inicia_sesion{

@@ -83,27 +83,47 @@ div.contacto {
   display: grid;
 }
 
-div p.contacto {
+div h1.contacto {
+  unicode-bidi: isolate;
   grid-area: 2 / 3 / 3 / 5;
+  margin-block: auto;
+  margin-inline: auto;
   font-size: 48px;
+  font-weight: normal;
 }
 
-div p.text_email {
-  grid-area: 3 / 2 / 4 / 3;
+label.email {
+  grid-area: 3 / 2 / 5 / 6;
   width: 100%;
+}
+
+div h2.text_email {
+  unicode-bidi: isolate;
+  width: 100%;
+  margin-block: auto;
+  margin-inline: auto;
   font-size: 32px;
+  font-weight: normal;
 }
 
 input.email {
-  grid-area: 4 / 2 / 5 / 6;
   width: 100%;
   height: 40%;
 }
 
-div p.nombre {
+label.nombre {
+  grid-area: 5 / 2 / 7 / 6;
+  width: 100%;
+}
+
+div h2.nombre {
+  unicode-bidi: isolate;
   grid-area: 5 / 2 / 6 / 3;
   width: 100%;
+  margin-block: auto;
+  margin-inline: auto;
   font-size: 32px;
+  font-weight: normal;
 }
 
 input.nombre {
@@ -112,16 +132,26 @@ input.nombre {
   height: 40%;
 }
 
-div p.mensaje {
+label.mensaje {
+  grid-area: 7 / 2 / 9 / 6;
+  width: 100%;
+  height: 100%;
+}
+
+div h2.mensaje {
+  unicode-bidi: isolate;
   grid-area: 7 / 2 / 8 / 3;
   width: 100%;
+  margin-block: auto;
+  margin-inline: auto;
   font-size: 32px;
+  font-weight: normal;
 }
 
 textarea.mensaje {
   grid-area: 8 / 2 / 9 / 6;
   width: 100%;
-  height: 100%;
+  height: 50%;
 }
 
 button {
@@ -205,7 +235,7 @@ a.crear_cuenta {
   textarea.mensaje {
     grid-area: 8 / 2 / 9 / 6;
     width: 100%;
-    height: 100%;
+    height: 50%;
     font-size: 24px;
   }
 

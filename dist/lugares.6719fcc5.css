@@ -48,6 +48,13 @@ html, body {
   display: flex;
 }
 
+h1 {
+  unicode-bidi: isolate;
+  margin-block: auto;
+  margin-inline: auto;
+  font-weight: normal;
+}
+
 a {
   color: #000;
   font-size: 32px;
@@ -81,14 +88,17 @@ section {
   display: grid;
 }
 
-.nombre {
+h2.nombre {
+  unicode-bidi: isolate;
   color: #fff;
   text-align: center;
   background-color: #000;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
   grid-area: 5 / 1 / 6 / 2;
+  margin: 0;
   font-size: 64px;
+  font-weight: normal;
 }
 
 section.lugar1 {

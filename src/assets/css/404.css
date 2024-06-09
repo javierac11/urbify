@@ -2,7 +2,20 @@ body{
     display: grid;
     background-color: #BDD8F1;
 }
+body.dark-mode, html.dark-mode{
+    background-color: #0f3460;
+    color: #e0e0e0;
+}
+button.modo{
+    grid-area: 1 / 12 / 2 / 13;
+    background-color: #82A6CB;
 
+    cursor: pointer;
+}
+button.dark-mode{
+    background-color: #16213e;
+    color: #e0e0e0;
+}
 
 main {
     display: grid;

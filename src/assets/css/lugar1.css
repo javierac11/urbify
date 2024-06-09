@@ -2,6 +2,30 @@
 @import "footer.css";
 @import "body.css";
 
+body.dark-mode, html.dark-mode{
+    background-color: #0f3460;
+    color: #e0e0e0;
+}
+
+button.modo{
+    grid-area: 1 / 12 / 2 / 13;
+    background-color: #3667A6;
+    cursor: pointer;
+    color: #e0e0e0;
+}
+
+button.modo.dark-mode{
+    background-color: #16213e;
+}
+
+button.dark-mode{
+    background-color: #0f3460;
+}
+
+a.dark-mode{
+    color: #e0e0e0;
+}
+
 a{
     text-decoration: none;
     color: #000000;
@@ -64,6 +88,11 @@ section.texto{
     background-color: #82A6CB;
 }
 
+section.texto.dark-mode{
+    background-color: #16213e;
+    color: #e0e0e0;
+}
+
 section.que_hacer{
     grid-area: 1 / 10 / 9 / 14;
     background-color: #82A6CB;
@@ -78,6 +107,14 @@ section.mapa{
 
 section p{
     grid-column: 2;
+}
+section p.dark-mode{
+    color: #e0e0e0;
+}
+
+section.que_hacer.dark-mode{
+    background-color: #16213e;
+    color: #e0e0e0;
 }
 
 section.que_hacer h1{

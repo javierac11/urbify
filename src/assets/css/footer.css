@@ -13,6 +13,14 @@ footer{
 
 }
 
+footer.dark-mode{
+    background-color: #1a1a2e;
+}
+
+.contacto.dark-mode{
+    color: #e0e0e0;
+}
+
 .contacto{
     grid-column: 10;
     justify-content: end;
